@@ -9,4 +9,16 @@ script:
   - echo "build app binaries"
   - make app-linux
   - make app-mac
-  - 
+
+deploy:
+    provider: releases
+    api_key:
+        secure: $API_KEY
+    file:
+        - parameters-util-linux  
+        - parameters-util-mac
+    skip_cleanup: true
+    on:
+        tags: true
+
+
