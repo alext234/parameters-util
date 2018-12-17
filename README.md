@@ -3,6 +3,8 @@ A small utility for retrieving AWS Parameter Store and output to files or direct
 
 ## TODO
 
+- create a dir aws-param-store
+
 - could be used as a lib
 
 - could be used as a cli utility
