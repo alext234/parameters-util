@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/alext234/parameters-util.svg?branch=master)](https://travis-ci.org/alext234/parameters-util)
+
 ## parameters-util
 A small utility for retrieving AWS Parameter Store and output to files or directories
 
