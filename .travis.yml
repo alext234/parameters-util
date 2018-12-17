@@ -5,9 +5,12 @@ go:
 script:
 - echo "run unit tests"
 - make test
-- echo "build app binaries"
-- make app-linux
-- make app-mac
+
+before_deploy:
+    - echo "build app binaries"
+    - make app-linux
+    - make app-mac
+
 deploy:
   provider: releases
   api_key:
